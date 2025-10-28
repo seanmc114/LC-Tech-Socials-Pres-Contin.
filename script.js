@@ -18,20 +18,140 @@
   const GLOBAL_CHEATS_KEY = "tqplus:v3:globalCheats";
 
   // ===================== DATA (present-based for all tenses) =====================
-  const PRESENT = {
-    1:[{en:"Who?",es:"¿Quién?"},{en:"What?",es:"¿Qué?"},{en:"Where?",es:"¿Dónde?"},{en:"When?",es:"¿Cuándo?"},{en:"Why?",es:"¿Por qué?"},{en:"How?",es:"¿Cómo?"},{en:"Which?",es:"¿Cuál?"},{en:"Whose?",es:"¿De quién?"},{en:"How many?",es:"¿Cuántos?"},{en:"How much?",es:"¿Cuánto?"},{en:"From where?",es:"¿De dónde?"},{en:"To where?",es:"¿Adónde?"},{en:"Since when?",es:"¿Desde cuándo?"},{en:"Until when?",es:"¿Hasta cuándo?"},{en:"How often?",es:"¿Con qué frecuencia?"},{en:"How old?",es:"¿Cuántos años?"}],
-    2:[{en:"Who is it?",es:"¿Quién es?"},{en:"What is it?",es:"¿Qué es?"},{en:"Where are you?",es:"¿Dónde estás?"},{en:"When is it?",es:"¿Cuándo es?"},{en:"Why is it cold?",es:"¿Por qué hace frío?"},{en:"How are you?",es:"¿Cómo estás?"},{en:"Which one?",es:"¿Cuál?"},{en:"Whose book is it?",es:"¿De quién es el libro?"},{en:"How many students?",es:"¿Cuántos estudiantes?"},{en:"How much money?",es:"¿Cuánto dinero?"},{en:"Where is it?",es:"¿Dónde está?"},{en:"When do we meet?",es:"¿Cuándo nos vemos?"}],
-    3:[{en:"Who are you?",es:"¿Quién eres?"},{en:"What do you want?",es:"¿Qué quieres?"},{en:"Where do you live?",es:"¿Dónde vives?"},{en:"When do you study?",es:"¿Cuándo estudias?"},{en:"Why are you here?",es:"¿Por qué estás aquí?"},{en:"How do you feel?",es:"¿Cómo te sientes?"},{en:"Which is your house?",es:"¿Cuál es tu casa?"},{en:"Whose idea is it?",es:"¿De quién es la idea?"},{en:"How many brothers do you have?",es:"¿Cuántos hermanos tienes?"},{en:"How much water do you drink?",es:"¿Cuánta agua bebes?"}],
-    4:[{en:"Who is your teacher?",es:"¿Quién es tu profesor?"},{en:"What time is it?",es:"¿Qué hora es?"},{en:"Where do you work?",es:"¿Dónde trabajas?"},{en:"When do you sleep?",es:"¿Cuándo duermes?"},{en:"Why are you sad?",es:"¿Por qué estás triste?"},{en:"How do you learn?",es:"¿Cómo aprendes?"},{en:"Which subject do you like?",es:"¿Qué asignatura te gusta?"},{en:"Whose car is this?",es:"¿De quién es este coche?"},{en:"How many friends do you have?",es:"¿Cuántos amigos tienes?"},{en:"How long is the class?",es:"¿Cuánto dura la clase?"}],
-    5:[{en:"Who are they?",es:"¿Quiénes son ellos?"},{en:"What are you doing?",es:"¿Qué haces?"},{en:"Where are you going?",es:"¿Adónde vas?"},{en:"When do you arrive?",es:"¿Cuándo llegas?"},{en:"Why are you late?",es:"¿Por qué llegas tarde?"},{en:"How do you know?",es:"¿Cómo sabes?"},{en:"Which one do you prefer?",es:"¿Cuál prefieres?"},{en:"Whose idea is that?",es:"¿De quién es esa idea?"},{en:"How many languages do you speak?",es:"¿Cuántos idiomas hablas?"},{en:"How much time do we have?",es:"¿Cuánto tiempo tenemos?"}],
-    6:[{en:"Who helps you?",es:"¿Quién te ayuda?"},{en:"What do you need?",es:"¿Qué necesitas?"},{en:"Where is your house?",es:"¿Dónde está tu casa?"},{en:"When do you eat lunch?",es:"¿Cuándo almuerzas?"},{en:"Why do you study Spanish?",es:"¿Por qué estudias español?"},{en:"How do you get to school?",es:"¿Cómo llegas a la escuela?"},{en:"Which class are you in?",es:"¿En qué clase estás?"},{en:"Whose turn is it?",es:"¿De quién es el turno?"},{en:"How many pets do you have?",es:"¿Cuántas mascotas tienes?"},{en:"How much does it cost?",es:"¿Cuánto cuesta?"}],
-    7:[{en:"Who helps you at home?",es:"¿Quién te ayuda en casa?"},{en:"What do you eat for breakfast?",es:"¿Qué desayunas?"},{en:"Where do you go on weekends?",es:"¿Adónde vas los fines de semana?"},{en:"When do you wake up?",es:"¿Cuándo te despiertas?"},{en:"Why do you run?",es:"¿Por qué corres?"},{en:"How do you feel today?",es:"¿Cómo te sientes hoy?"},{en:"Which movie do you like?",es:"¿Qué película te gusta?"},{en:"Whose phone is this?",es:"¿De quién es este teléfono?"},{en:"How many hours do you study?",es:"¿Cuántas horas estudias?"},{en:"How much homework do you have?",es:"¿Cuánta tarea tienes?"}],
-    8:[{en:"Who is calling?",es:"¿Quién llama?"},{en:"What are they doing?",es:"¿Qué hacen?"},{en:"Where do you go every day?",es:"¿Adónde vas cada día?"},{en:"When do you finish work?",es:"¿Cuándo terminas el trabajo?"},{en:"Why are you tired?",es:"¿Por qué estás cansado?"},{en:"How do you travel to school?",es:"¿Cómo viajas a la escuela?"},{en:"Which color do you like?",es:"¿Qué color te gusta?"},{en:"Whose bag is that?",es:"¿De quién es esa bolsa?"},{en:"How many people live here?",es:"¿Cuántas personas viven aquí?"},{en:"How much water do you drink every day?",es:"¿Cuánta agua bebes cada día?"}],
-    9:[{en:"Who opens the door?",es:"¿Quién abre la puerta?"},{en:"What do you say?",es:"¿Qué dices?"},{en:"Where do you go after class?",es:"¿Adónde vas después de clase?"},{en:"When do you arrive at school?",es:"¿Cuándo llegas a la escuela?"},{en:"Why do you leave early?",es:"¿Por qué te vas temprano?"},{en:"How do you do it?",es:"¿Cómo lo haces?"},{en:"Which car do you choose?",es:"¿Qué coche eliges?"},{en:"Whose shoes are these?",es:"¿De quién son estos zapatos?"},{en:"How many students pass?",es:"¿Cuántos estudiantes aprueban?"},{en:"How much milk do you drink?",es:"¿Cuánta leche bebes?"}],
-    10:[{en:"Who are you waiting for?",es:"¿A quién esperas?"},{en:"What are you thinking about?",es:"¿En qué piensas?"},{en:"Where do you want to go?",es:"¿Adónde quieres ir?"},{en:"When do you return home?",es:"¿Cuándo vuelves a casa?"},{en:"Why are you here?",es:"¿Por qué estás aquí?"},{en:"How do you learn so much?",es:"¿Cómo aprendes tanto?"},{en:"Which of these do you prefer?",es:"¿Cuál de estos prefieres?"},{en:"Whose turn is it to cook?",es:"¿De quién es el turno de cocinar?"},{en:"How many books do you read?",es:"¿Cuántos libros lees?"},{en:"How much time do we have?",es:"¿Cuánto tiempo tenemos?"}]
-  };
-  const deepCopy = obj => JSON.parse(JSON.stringify(obj));
-  const DATASETS = { Present: PRESENT, Past: deepCopy(PRESENT), Future: deepCopy(PRESENT) };
+  // GAME 5 — Technology & Social Media (Present Continuous + Connector: además)
+// Direction: English -> Spanish
+// Rules applied:
+// - Only final ? is used in answers (no inverted ¿)
+// - Accents required
+// - Capitals NOT required (script will handle)
+// - Pronouns not required EXCEPT "usted" must appear when marked (formal)
+// - Connector: además
+
+const PRESENT = {
+  1: [
+    { en: "I use my phone", es: "Uso mi móvil" },
+    { en: "I have a computer", es: "Tengo un ordenador" },
+    { en: "The internet is useful", es: "Internet es útil" },
+    { en: "I send messages", es: "Envio mensajes" },
+    { en: "I watch videos", es: "Veo vídeos" },
+    { en: "I play video games", es: "Juego a los videojuegos" },
+    { en: "My password is secure", es: "Mi contraseña es segura" },
+    { en: "I like technology", es: "Me gusta la tecnología" },
+    { en: "My phone is new", es: "Mi móvil es nuevo" },
+    { en: "My screen is big", es: "Mi pantalla es grande" }
+  ],
+  2: [
+    { en: "I do not share my password", es: "No comparto mi contraseña" },
+    { en: "I use email", es: "Uso el correo electrónico" },
+    { en: "I download music", es: "Descargo música" },
+    { en: "I read the news online", es: "Leo las noticias en línea" },
+    { en: "Do you use email?", es: "Usas el correo electrónico?" },
+    { en: "Do you have Wi-Fi at home?", es: "Tienes wifi en casa?" },
+    { en: "Do you like technology? (formal)", es: "Le gusta a usted la tecnología?" },
+    { en: "My parents are strict with screens", es: "Mis padres son estrictos con las pantallas" },
+    { en: "Ana uses a tablet", es: "Ana usa una tableta" },
+    { en: "Juan prefers a laptop", es: "Juan prefiere un portátil" }
+  ],
+  3: [
+    { en: "I am studying online", es: "Estoy estudiando en línea" },
+    { en: "I am sending an email", es: "Estoy enviando un correo" },
+    { en: "I am watching a documentary", es: "Estoy viendo un documental" },
+    { en: "I do not open unknown links", es: "No abro enlaces desconocidos" },
+    { en: "Do you use social media?", es: "Usas las redes sociales?" },
+    { en: "Are you doing your homework? (formal)", es: "Está usted haciendo los deberes?" },
+    { en: "The website is safe", es: "La página web es segura" },
+    { en: "The app is free", es: "La aplicación es gratuita" },
+    { en: "I study online and also revise vocabulary", es: "Estudio en línea y además repaso vocabulario" },
+    { en: "We are learning quickly", es: "Estamos aprendiendo rápido" }
+  ],
+  4: [
+    { en: "I am chatting with friends", es: "Estoy chateando con amigos" },
+    { en: "I am downloading a file", es: "Estoy descargando un archivo" },
+    { en: "I am listening to a podcast", es: "Estoy escuchando un pódcast" },
+    { en: "I do not post personal data", es: "No publico datos personales" },
+    { en: "Do you follow school accounts?", es: "Sigues cuentas del colegio?" },
+    { en: "Are you using a strong password? (formal)", es: "Está usted usando una contraseña fuerte?" },
+    { en: "The camera is good and also fast", es: "La cámara es buena y además rápida" },
+    { en: "María is creating a presentation", es: "María está creando una presentación" },
+    { en: "Pablo is fixing the computer", es: "Pablo está arreglando el ordenador" },
+    { en: "We are sharing notes", es: "Estamos compartiendo apuntes" }
+  ],
+  5: [
+    { en: "I am backing up my files", es: "Estoy haciendo una copia de seguridad de mis archivos" },
+    { en: "I am updating the app", es: "Estoy actualizando la aplicación" },
+    { en: "I am writing a report", es: "Estoy escribiendo un informe" },
+    { en: "I am not wasting time online", es: "No estoy perdiendo el tiempo en línea" },
+    { en: "Do you report cyberbullying?", es: "Denuncias el ciberacoso?" },
+    { en: "Are you protecting your privacy? (formal)", es: "Está usted protegiendo su privacidad?" },
+    { en: "The internet helps me and also distracts me", es: "Internet me ayuda y además me distrae" },
+    { en: "We are preparing a slideshow", es: "Estamos preparando una presentación" },
+    { en: "I am organising my folders", es: "Estoy organizando mis carpetas" },
+    { en: "I am learning new skills", es: "Estoy aprendiendo habilidades nuevas" }
+  ],
+  6: [
+    { en: "I am researching a topic", es: "Estoy investigando un tema" },
+    { en: "I am editing a video", es: "Estoy editando un vídeo" },
+    { en: "I am creating a secure password", es: "Estoy creando una contraseña segura" },
+    { en: "I am not sharing my location", es: "No estoy compartiendo mi ubicación" },
+    { en: "Are you reading reliable sources?", es: "Lees fuentes fiables?" },
+    { en: "Are you using two-factor authentication? (formal)", es: "Está usted usando la verificación en dos pasos?" },
+    { en: "The platform is simple and also accessible", es: "La plataforma es sencilla y además accesible" },
+    { en: "Ana is designing a poster", es: "Ana está diseñando un cartel" },
+    { en: "We are testing the microphone", es: "Estamos probando el micrófono" },
+    { en: "I am saving my work often", es: "Estoy guardando mi trabajo a menudo" }
+  ],
+  7: [
+    { en: "I am managing my screen time", es: "Estoy gestionando mi tiempo de pantalla" },
+    { en: "I am cleaning the storage", es: "Estoy limpiando el almacenamiento" },
+    { en: "I am connecting to the school network", es: "Estoy conectándome a la red del colegio" },
+    { en: "I am not accepting requests from strangers", es: "No estoy aceptando solicitudes de desconocidos" },
+    { en: "Do you update your apps regularly?", es: "Actualizas tus aplicaciones regularmente?" },
+    { en: "Are you checking the settings? (formal)", es: "Está usted revisando la configuración?" },
+    { en: "The device is new and also fast", es: "El dispositivo es nuevo y además rápido" },
+    { en: "Juan is installing software", es: "Juan está instalando software" },
+    { en: "We are changing the password", es: "Estamos cambiando la contraseña" },
+    { en: "I am learning to code", es: "Estoy aprendiendo a programar" }
+  ],
+  8: [
+    { en: "I am preparing a digital portfolio", es: "Estoy preparando un portafolio digital" },
+    { en: "I am collaborating in a shared document", es: "Estoy colaborando en un documento compartido" },
+    { en: "I am checking my notifications", es: "Estoy revisando mis notificaciones" },
+    { en: "I am not clicking suspicious ads", es: "No estoy haciendo clic en anuncios sospechosos" },
+    { en: "Do you compare information on different sites?", es: "Comparas información en sitios diferentes?" },
+    { en: "Are you downloading legally? (formal)", es: "Está usted descargando de forma legal?" },
+    { en: "The class is online and also interactive", es: "La clase es en línea y además interactiva" },
+    { en: "María is presenting her project", es: "María está presentando su proyecto" },
+    { en: "We are practising a live stream", es: "Estamos practicando una retransmisión en directo" },
+    { en: "I am organising my digital life", es: "Estoy organizando mi vida digital" }
+  ],
+  9: [
+    { en: "I am using AI to study", es: "Estoy usando IA para estudiar" },
+    { en: "I am checking sources for bias", es: "Estoy comprobando sesgos en las fuentes" },
+    { en: "I am improving my digital wellbeing", es: "Estoy mejorando mi bienestar digital" },
+    { en: "I am not sharing photos without permission", es: "No estoy compartiendo fotos sin permiso" },
+    { en: "Do you verify facts before posting?", es: "Verificas los hechos antes de publicar?" },
+    { en: "Are you respecting copyright? (formal)", es: "Está usted respetando los derechos de autor?" },
+    { en: "The tool is powerful and also easy", es: "La herramienta es potente y además fácil" },
+    { en: "Pablo is modelling a 3D object", es: "Pablo está modelando un objeto 3D" },
+    { en: "We are preparing a podcast episode", es: "Estamos preparando un episodio de pódcast" },
+    { en: "I am protecting my digital identity", es: "Estoy protegiendo mi identidad digital" }
+  ],
+  10: [
+    { en: "I am balancing study and screen time", es: "Estoy equilibrando estudio y tiempo de pantalla" },
+    { en: "I am presenting a project online", es: "Estoy presentando un proyecto en línea" },
+    { en: "I am collaborating with my class", es: "Estoy colaborando con mi clase" },
+    { en: "I am not ignoring safety rules", es: "No estoy ignorando las normas de seguridad" },
+    { en: "Do you manage your data well?", es: "Gestionas bien tus datos?" },
+    { en: "Are you using technology responsibly? (formal)", es: "Está usted usando la tecnología de forma responsable?" },
+    { en: "The platform is safe and also reliable", es: "La plataforma es segura y además fiable" },
+    { en: "Ana is sharing her findings", es: "Ana está compartiendo sus conclusiones" },
+    { en: "We are creating quality content", es: "Estamos creando contenido de calidad" },
+    { en: "I am learning and progressing every day", es: "Estoy aprendiendo y progresando cada día" }
+  ]
+};
+
+const deepCopy = obj => JSON.parse(JSON.stringify(obj));
+const DATASETS = { Present: PRESENT, Past: deepCopy(PRESENT), Future: deepCopy(PRESENT) };
 
   // ===================== Global cheats =====================
   const clampCheats = n => Math.max(0, Math.min(GLOBAL_CHEATS_MAX, n|0));
